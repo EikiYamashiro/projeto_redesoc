@@ -6,7 +6,7 @@ Repositório do projeto final da disciplina Redes Socias, sexto semestre de Enge
 
 6º Semestre - Engenharia de Computação
 
-Antônio Fuziy, Eiki Yamashiro, Marcelo Miguel
+Antonio Fuziy, Eiki Yamashiro, Marcelo Miguel
 
 ### Database
 
@@ -23,7 +23,7 @@ Antônio Fuziy, Eiki Yamashiro, Marcelo Miguel
 
 ### Escolha do Database:
 
-- Esport Team Earnings: https://www.kaggle.com/chanoncharuchinda/top-100-highest-overall-esport-team-earning
+- Top 250 Football transfers from 2000 to 2018: https://www.kaggle.com/vardan95ghazaryan/top-250-football-transfers-from-2000-to-2018
 
 ### MP1:
 
@@ -33,23 +33,32 @@ Antônio Fuziy, Eiki Yamashiro, Marcelo Miguel
 - Mecanismos sem saltos lógicos.
 - Formular hipótese alternativa.
 - Formular mecanismo alternativo.
+___
 
-### Hipótese:
+### Conceitos
 
-**Times mais presentes em muitas modalidades são mais ricos.**
+- **Sucesso da transferência:** Caso o time consiga intermediar uma boa compra e venda, mensurada a partir do percentual do lucro.
 
-### Conceitos:
+- **Times recrutadores:** Times que contratam jogadores promissores e vendem para clubes maiores por maior preço.
 
-- **Riqueza:** Recompensas financeiras dadas ao obter bom desempenhos em campeonatos.
+### Variáveis
 
-- **Presença:** Presença em diferentes modalidades de games.
+- **Lucro:** Percentual calculado a partir do valor de compra e venda do jogador.
 
-### Variáveis:
+- **Betweenness:** Centralidade que mensura a capacidade de intermediar diferentes "panelinhas".
 
-- **Total Money Earned:** Quantitade total de dinheiro ganho, mensura riqueza.
+### Hipótese
 
-- **Diversificação:** Quantidade de modalidades diferentes que o time está presente, mensura presença.
+**Times recrutadores que intermediam diferentes ligas, possuem maior sucesso nas transferências.**
 
-### Mecanismo:
+### Mecanismo
 
-Um time que está presente mais modalidades diferentes, compete em mais torneios, o que possibilita aumentar os ganhos oriundos das premiações ao depender de seu desempenho. Dessa forma, o time não está limitado à concorrer apenas aos ganhos 
+Times das mesmas ligas costumam realizar mais transferências entre si, por outro lado, grandes jogadores, aqueles mais caros, passam por diferentes ligas ao longo de suas carreiras. Dessa forma, existem times que aproveitam jogadores promissores de times menores em ligas menos valorizadas para revelá-los aos times maiores, de modo a intermediar diferentes ligas **(alto betweenness)**.
+
+### Hipótese Alternativa
+
+**Times grandes, os quais não dependem do sucesso das tranferências, intermediam mais delas entre diferentes ligas.**
+
+### Mecanismo Alternativo
+
+Times grandes compram jogadores reconhecidos, bem conceituados e com valor alto de mercado de outros times grandes muitas vezes de outras ligas, visto que rivais nacionais evitam realizar transferências entre si. Além disso, os times grandes possuem receitas em outros setores, assim não se preocupam em realizar operações de vendas lucrativas de jogadores comprados anteriormente.
